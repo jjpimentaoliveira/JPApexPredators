@@ -11,8 +11,6 @@ struct PredatorRow: View {
     let predator: ApexPredator
     var body: some View {
         HStack {
-
-            // Dino image
             Image(predator.name.lowercased().filter { $0 != " "})
                 .resizable()
                 .scaledToFit()
@@ -58,6 +56,4 @@ struct PredatorRow: View {
         movieScenes: [movieScene],
         link: "https://jurassicpark.fandom.com/wiki/Velociraptor"
     ))
-    .preferredColorScheme(.dark)
-    .previewLayout(.sizeThatFits)
 }

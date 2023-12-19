@@ -16,6 +16,7 @@
 		CA06281A2B31FB21004672DC /* MovieScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0628192B31FB21004672DC /* MovieScene.swift */; };
 		CA06281E2B31FBA9004672DC /* PredatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06281D2B31FBA9004672DC /* PredatorController.swift */; };
 		CA0628242B3201F6004672DC /* PredatorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0628232B3201F6004672DC /* PredatorRow.swift */; };
+		CA0628262B320889004672DC /* PredatorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0628252B320889004672DC /* PredatorDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		CA0628192B31FB21004672DC /* MovieScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieScene.swift; sourceTree = "<group>"; };
 		CA06281D2B31FBA9004672DC /* PredatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorController.swift; sourceTree = "<group>"; };
 		CA0628232B3201F6004672DC /* PredatorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorRow.swift; sourceTree = "<group>"; };
+		CA0628252B320889004672DC /* PredatorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			children = (
 				CA0628092B31F758004672DC /* ContentView.swift */,
 				CA0628232B3201F6004672DC /* PredatorRow.swift */,
+				CA0628252B320889004672DC /* PredatorDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0628262B320889004672DC /* PredatorDetail.swift in Sources */,
 				CA0628182B31FA4E004672DC /* ApexPredator.swift in Sources */,
 				CA06281E2B31FBA9004672DC /* PredatorController.swift in Sources */,
 				CA06281A2B31FB21004672DC /* MovieScene.swift in Sources */,
