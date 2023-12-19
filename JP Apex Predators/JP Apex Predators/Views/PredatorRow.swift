@@ -13,24 +13,24 @@ struct PredatorRow: View {
         HStack {
 
             // Dino image
-            Image(.indoraptor)
+            Image(predator.name.lowercased().filter { $0 != " "})
                 .resizable()
                 .scaledToFit()
                 .frame(width: 100, height: 100)
                 .shadow(color: .white, radius: 1, x: 0, y: 0)
 
             VStack(alignment: .leading) {
-                Text("Indoraptor")
+                Text(predator.name)
                     .fontWeight(.bold)
 
-                Text("Land")
+                Text(predator.type.capitalized)
                     .font(.subheadline)
-                    .fontWeight(.regular)
+                    .fontWeight(.bold)
                     .padding(.horizontal, 10)
                     .padding(.vertical, 6)
                     .overlay(
                         RoundedRectangle(cornerRadius: 20)
-                            .fill(.brown.opacity(0.33))
+                            .fill(predator.typeOverlay().opacity(0.33))
                     )
             }
         }
