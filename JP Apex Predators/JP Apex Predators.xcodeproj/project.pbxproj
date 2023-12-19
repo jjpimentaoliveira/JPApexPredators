@@ -14,6 +14,7 @@
 		CA0628162B31F842004672DC /* jpapexpredators.json in Resources */ = {isa = PBXBuildFile; fileRef = CA0628152B31F842004672DC /* jpapexpredators.json */; };
 		CA0628182B31FA4E004672DC /* ApexPredator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0628172B31FA4E004672DC /* ApexPredator.swift */; };
 		CA06281A2B31FB21004672DC /* MovieScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0628192B31FB21004672DC /* MovieScene.swift */; };
+		CA06281E2B31FBA9004672DC /* PredatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06281D2B31FBA9004672DC /* PredatorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		CA0628152B31F842004672DC /* jpapexpredators.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = jpapexpredators.json; sourceTree = "<group>"; };
 		CA0628172B31FA4E004672DC /* ApexPredator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexPredator.swift; sourceTree = "<group>"; };
 		CA0628192B31FB21004672DC /* MovieScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieScene.swift; sourceTree = "<group>"; };
+		CA06281D2B31FBA9004672DC /* PredatorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				CA0628072B31F758004672DC /* JP_Apex_PredatorsApp.swift */,
 				CA0628092B31F758004672DC /* ContentView.swift */,
 				CA06281B2B31FB92004672DC /* Models */,
+				CA06281C2B31FB9E004672DC /* Controllers */,
 				CA0628152B31F842004672DC /* jpapexpredators.json */,
 				CA06280B2B31F759004672DC /* Assets.xcassets */,
 				CA06280D2B31F759004672DC /* Preview Content */,
@@ -82,6 +85,14 @@
 				CA0628192B31FB21004672DC /* MovieScene.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CA06281C2B31FB9E004672DC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA06281D2B31FBA9004672DC /* PredatorController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA0628182B31FA4E004672DC /* ApexPredator.swift in Sources */,
+				CA06281E2B31FBA9004672DC /* PredatorController.swift in Sources */,
 				CA06281A2B31FB21004672DC /* MovieScene.swift in Sources */,
 				CA06280A2B31F758004672DC /* ContentView.swift in Sources */,
 				CA0628082B31F758004672DC /* JP_Apex_PredatorsApp.swift in Sources */,
