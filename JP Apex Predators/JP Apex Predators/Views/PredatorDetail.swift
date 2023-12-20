@@ -101,4 +101,5 @@ struct PredatorDetail: View {
     )
     
     return PredatorDetail(predator: predator)
+        .preferredColorScheme(.dark)
 }

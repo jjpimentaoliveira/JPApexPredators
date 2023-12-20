@@ -56,4 +56,5 @@ struct PredatorRow: View {
         movieScenes: [movieScene],
         link: "https://jurassicpark.fandom.com/wiki/Velociraptor"
     ))
+    .preferredColorScheme(.dark)
 }

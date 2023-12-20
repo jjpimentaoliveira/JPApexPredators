@@ -9,9 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     let predatorController = PredatorController()
+    @State private var sortAlphabetical = false
 
     var body: some View {
-        NavigationView {
+        sortAlphabetical
+            ? predatorController.sortByAlphabetical()
+            : predatorController.sortByMovieAppearance()
+        
+        return NavigationView {
             List {
                 ForEach(predatorController.apexPredators) { predator in
                     NavigationLink(destination: PredatorDetail(predator: predator)) {
@@ -20,10 +25,22 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Apex Predators")
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button(action: {
+                        sortAlphabetical.toggle()
+                    }, label: {
+                        sortAlphabetical
+                            ? Image(systemName: "film")
+                            : Image(systemName: "textformat")
+                    })
+                }
+            }
         }
     }
 }
 
 #Preview {
     ContentView()
+        .preferredColorScheme(.dark)
 }
