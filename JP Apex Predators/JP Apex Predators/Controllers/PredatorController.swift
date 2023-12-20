@@ -46,7 +46,7 @@ class PredatorController {
         case "All":
             return "square.stack.3d.up.fill"
         case "Land": 
-            return "lead.fill"
+            return "leaf.fill"
         case "Sea":
             return "drop.fill"
         default:

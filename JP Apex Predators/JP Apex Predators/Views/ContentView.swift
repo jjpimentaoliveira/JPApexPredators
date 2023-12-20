@@ -10,8 +10,12 @@ import SwiftUI
 struct ContentView: View {
     let predatorController = PredatorController()
     @State private var sortAlphabetical = false
+    @State private var currentFilter = "All"
 
     var body: some View {
+
+        predatorController.filterBy(type: currentFilter)
+
         sortAlphabetical
             ? predatorController.sortByAlphabetical()
             : predatorController.sortByMovieAppearance()
@@ -28,12 +32,30 @@ struct ContentView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button(action: {
-                        sortAlphabetical.toggle()
+                        withAnimation {
+                            sortAlphabetical.toggle()
+                        }
                     }, label: {
                         sortAlphabetical
                             ? Image(systemName: "film")
                             : Image(systemName: "textformat")
                     })
+                }
+
+                ToolbarItem(placement: .topBarTrailing) {
+                    Menu {
+                        Picker("Filter", selection: $currentFilter.animation()) {
+                            ForEach(predatorController.typeFilters, id: \.self) { type in
+                                HStack {
+                                    Text(type)
+                                    Spacer()
+                                    Image(systemName: predatorController.typeIcon(for: type))
+                                }
+                            }
+                        }
+                    } label: {
+                        Image(systemName: "slider.horizontal.3")
+                    }
                 }
             }
         }
